@@ -11,14 +11,14 @@ app.http().io();
 var gCurrentGameStatus;  // start undefined
 
 //This block of code connects the server to twitter, enabling authentication, and the reading and sending of tweets
-var access_token = '1963524385-rRLDDxCvjtLDQvwDjY1ld4Qc1bl1ITwp23JC26B';
-var access_token_secret = 'LFisePEFhOB662n4eA9y0PnClCg9lZ81jIDNec';
+var access_token = 'token';
+var access_token_secret = 'tSecret';
 var OAuth = require('oauth').OAuth
   , oa = new OAuth(
       "https://api.twitter.com/oauth/request_token",
       "https://api.twitter.com/oauth/access_token",
-      "B1Man4Ko0BwfXJS1zSi0g",
-      "c0GHS1rxGzm3TVHJ1loHwFiiEpTXtAE31Vbm7PE0dFQ",
+      "token",
+      "tSecret",
       "1.0A",
       "http://students.iam.colum.edu:8091/auth/twitter/callback",
       "HMAC-SHA1"
