@@ -11,8 +11,8 @@ app.http().io();
 var gCurrentGameStatus;  // start undefined
 
 //This block of code connects the server to twitter, enabling authentication, and the reading and sending of tweets
-var access_token = 'token';
-var access_token_secret = 'tSecret';
+var access_token = 'token'; //replaced with dummy
+var access_token_secret = 'tSecret'; //replaced with dummy
 var OAuth = require('oauth').OAuth
   , oa = new OAuth(
       "https://api.twitter.com/oauth/request_token",
